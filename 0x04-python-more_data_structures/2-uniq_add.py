@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def uniq_add(my_list=[]):
     """
     a one-liner to convert the original list into a set as they
