@@ -13,17 +13,17 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """width of the square"""
         return (self.__width)
-    
+
     @property
     def height(self):
         """height of the square"""
         return (self.__height)
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
