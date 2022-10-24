@@ -1,0 +1,22 @@
+The ``MyList`` module
+======================
+
+Using ``print_sorted``
+-------------------
+
+Importing the function from the module:
+	>>> MyList = __import__("1-my_list.py").MyList
+    >>> m = MyList()
+
+Checking for module docstring:
+	 >>> m = __import__("1-my_list.py").__doc__
+	 >>> len(m) > 1
+	 True
+
+Checking for function docstring:
+	 >>> f = __import__('1-my_list').MyList.__doc__
+         >>> len(f) > 1
+         True
+Appending a very big number
+    >>> m.append(1234567890)
+    [1234567890]
