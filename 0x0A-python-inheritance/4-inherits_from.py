@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Module checks if object
 is an instance of a class that inherited
