@@ -9,6 +9,10 @@ a script that lists all states
 from the database
 '''
 if __name__ == "__main__":
+    """
+    Access to the database and get the states
+    from the database.
+    """
     user, password, database = argv[1], argv[2], argv[3]
     db = MySQLdb.connect(
         host="localhost", port=3306, user=user,
