@@ -9,9 +9,10 @@ a script that lists all states
 from the database
 '''
 if __name__ == "__main__":
+    user, password, database = argv[1], argv[2], argv[3]
     db = MySQLdb.connect(
-        host="localhost", port=3306, user=argv[1],
-        password=argv[2], database=argv[3])
+        host="localhost", port=3306, user=user,
+        password=password, database=database)
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
     rows = cursor.fetchall()
